@@ -1,5 +1,5 @@
-// Akshit Rawat , Section : B , Student-ID = 20011236 
-// Question-2
+// https://leetcode.com/problems/design-circular-queue/submissions/?orderBy=most_votes (design circular queue leetcode!!!)
+
 
 #include <stdio.h>
 

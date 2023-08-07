@@ -1,5 +1,4 @@
-// Akshit Rawat , Section : B , Student-ID = 20011236 
-
+// Akshit Rawat , Section : B , Student-ID = 20011236 // Disadvantage : once an element is deleted, we cannot insert another element in its position (solved by circular queue!!!)
 #include <stdio.h>
 #include <stdlib.h>
 

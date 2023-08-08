@@ -1,5 +1,11 @@
 // https://leetcode.com/problems/design-circular-queue/submissions/?orderBy=most_votes (design circular queue leetcode!!!)
 
+// Slightly better and memory efficient than simple linear queue :)
+// But still Fixed MaxCapacticy for queue :( 
+// Note : size of queue != maxCapacity of Queue
+// size of queue = no. of elements present in the queue at a particular moment
+// MaxCapacity of queue = maximum no. of elements that can fit inside a queue(genrally array size is the maxCapacity for the queue)
+
 
 #include <stdio.h>
 

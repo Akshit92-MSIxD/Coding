@@ -1,6 +1,11 @@
-// Akshit Rawat , Section : B , Student-ID = 20011236 // Disadvantage : once an element is deleted, we cannot insert another element in its position (solved by circular queue!!!)
+// Disadvantage : once an element is deleted, we cannot insert another element in its position (solved by circular queue!!!)
+
+// Fixed MaxCapacticy for queue :( 
+// Note : size of queue != maxCapacity of Queue
+// size of queue = no. of elements present in the queue at a particular moment
+// MaxCapacity of queue = maximum no. of elements that can fit inside a queue(generally array size is the maxCapacity for the queue)
+
 #include <stdio.h>
-#include <stdlib.h>
 
 void enqueue(int *queue,int*front,int*rear,int size)
 { 
@@ -37,6 +42,7 @@ void enqueue(int *queue,int*front,int*rear,int size)
  }
 
 }
+
 
 void dequeue(int *queue,int*front,int*rear)
 {
@@ -92,19 +98,6 @@ void check_rear(int *queue,int*rear)
 
 }
 
-void size_queue(int *queue,int* size)
-{
-
-    printf("Enter the new size of dynamically allocated queue : ");
-    scanf("%d",size);
-   queue=(int *)realloc(queue,sizeof(int) * (*size));
-
-   if(queue==NULL)
-   printf("Sorry!!! memory is not reallocated successfully!!");
-   else
-   printf("Memory is reallocated successfully!!!");
-}
-
 
 int main()
 {
@@ -114,15 +107,13 @@ int main()
     printf("Enter : 2 to dequeue\n");
     printf("Enter : 3 to display the elements of a queue\n");
     printf("Enter : 4 to check front element of a queue\n");
-    printf("Enter : 5 to check rear element of a queue\n");
-    printf("Enter : 6 to change the size of queue!!!\n\n");
-
+    printf("Enter : 5 to check rear element of a queue\n\n");
  
  int size,front=-1,rear=-1,choice;
- printf("Enter the size of dynamically allocated queue : ");
+ printf("Enter the size of Queue : ");
  scanf("%d",&size);
 
- int *queue=(int *)malloc(sizeof(int) * size);
+ int queue[size];
 
  do
  {
@@ -143,12 +134,11 @@ int main()
                  break;
         case 5 : check_rear(queue,&rear);
                  break;
-        case 6 : size_queue(queue,&size);
-                 break;
         default : printf("Wrong choice!!!");
                   break;
     }
+    
  } while (choice!=0);
 
- return 0;
+  return 0;
 }

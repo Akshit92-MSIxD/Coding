@@ -1,3 +1,7 @@
+// Input Restricted Dequeue/Double ended Queue : Insertion is done from only one end(either front or back) , but deletion can be done from both ends of a queue
+// Output Restricted Dequeue/Double ended Queue : Deletion is done from only one end(either front or back) , but insertion can be done from both ends of a queue
+
+
 #include<stdio.h>
 #include<stdlib.h>
 int size;    

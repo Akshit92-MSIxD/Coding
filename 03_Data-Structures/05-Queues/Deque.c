@@ -1,5 +1,4 @@
-// Akshit Rawat , Section : B , Student-ID = 20011236 
-//Question-1
+// Deque is also known as double ended queue because here Insertion and deletion can occur from both ends of a queue :)
 
 #include <stdio.h>
 

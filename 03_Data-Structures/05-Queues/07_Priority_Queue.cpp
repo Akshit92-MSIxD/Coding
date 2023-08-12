@@ -5,7 +5,7 @@
 
 // Elements with minimum value/maximum value can be chosen as of highest priority :)
 
-// Priority queue can be a minheap(asc order in queue) || maxheap(desc order in queue)
+// Default Priority Queue is implemented with minHeap but we can make it maxHeap with some techniques :)
 
 // Insertion of a element in a n-size pq can take O(logn) worst case TC
 

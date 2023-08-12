@@ -1,4 +1,7 @@
 // Deque is also known as double ended queue because here insertion and deletion can occur from both ends of a queue :)
+// Deque has all functionalities of a vector, stack and queue :)
+// It also has a iterator support because deque has vector functionalities :)
+// Watch this video contains deque stl c++ ==> https://www.youtube.com/watch?v=uY60z4ff5W4
 
 #include <stdio.h>
 

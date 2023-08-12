@@ -1,4 +1,4 @@
-// Deque is also known as double ended queue because here Insertion and deletion can occur from both ends of a queue :)
+// Deque is also known as double ended queue because here insertion and deletion can occur from both ends of a queue :)
 
 #include <stdio.h>
 

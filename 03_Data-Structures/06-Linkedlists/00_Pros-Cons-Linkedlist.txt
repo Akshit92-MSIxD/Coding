@@ -1,0 +1,11 @@
+==> Pros of Linkedlist :
+
+-- Insertion O(1)
+-- Deletion O(1)
+-- Make efficient use of fragmented memory [When a program is started, the free memory areas are long and contiguous. Over time and with use, the long contiguous regions become fragmented into smaller and smaller contiguous areas. Eventually, it may become impossible for the program to obtain large contiguous chunks of memory.]
+
+
+==> Cons of LinkedList :
+
+-- No random access [sequential access]
+-- size

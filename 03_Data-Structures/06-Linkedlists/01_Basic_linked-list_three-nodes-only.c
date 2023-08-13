@@ -67,18 +67,18 @@ else
   current->next=NULL;
   head->next=current;
 
-  current=(struct node*)malloc(sizeof(struct node)); // creting third node but assigning its address to same current pointer
+  current=(struct node*)malloc(sizeof(struct node)); // creating third node but assigning its address to same current pointer
   scanf("%d",&current->data);
   current->next=NULL;
   head->next->next=current;
 
-  current=(struct node*)malloc(sizeof(struct node)); // creting fourth node but assigning its address to same current pointer
+  current=(struct node*)malloc(sizeof(struct node)); // creating fourth node but assigning its address to same current pointer
   scanf("%d",&current->data);
   current->next=NULL;
   head->next->next->next=current;
 
 
-  current=(struct node*)malloc(sizeof(struct node)); // creting fifth node but assigning its address to same current pointer
+  current=(struct node*)malloc(sizeof(struct node)); // creating fifth node but assigning its address to same current pointer
   scanf("%d",&current->data);
   current->next=NULL;
   head->next->next->next->next=current;

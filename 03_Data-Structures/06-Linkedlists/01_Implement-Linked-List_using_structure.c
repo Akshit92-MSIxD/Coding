@@ -1,3 +1,5 @@
+// Note in this implementation I have not written code for insertion , deletion and printList. Please read those codes in 02_Implement-Linked-List_using_structure.cpp :)
+
 #include <stdio.h>
 #include <stdlib.h>
 

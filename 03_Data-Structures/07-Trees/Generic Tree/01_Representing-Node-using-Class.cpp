@@ -7,7 +7,7 @@ using namespace std;
 #include <vector>
 
 
-// Not memory efficient :( 
+// This approach of storing addresses is not memory efficient :(  ==> Individual Node ka size bada hojaega kaafi vector ki waja se :(
 class Node
 {
 

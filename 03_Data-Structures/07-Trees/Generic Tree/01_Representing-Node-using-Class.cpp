@@ -70,7 +70,7 @@ int main()
     cout<<"\nRoot node : "<<root->data<<endl;
     cout<<"Children of root node : ";
 
-    for(int i=0;i<root->children.size()-1;i++)
+    for(int i=0;i<=root->children.size()-1;i++)
     {
         cout<<root->children[i]->data<<" ";
     }

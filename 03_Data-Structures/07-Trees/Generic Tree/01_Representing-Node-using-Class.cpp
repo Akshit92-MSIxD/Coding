@@ -22,6 +22,14 @@ public :
     this->data = data;
  }
 
+ ~Node()
+ {
+    for(Node* child : children)  // children is a vector and child is individual address of this vector
+    {
+        delete child; // will deallocate the memory that was provided to nodes on heap :)
+    }
+ }
+
 };
 
 
@@ -63,6 +71,10 @@ int main()
             continue;
         }
 
+        else if (choice != 'n') {
+            std::cout << "Invalid input. Please enter 'y' or 'n'.\n";
+        }
+
     }
     while(choice!='n');
 
@@ -74,6 +86,8 @@ int main()
     {
         cout<<root->children[i]->data<<" ";
     }
-
+   
+   // Release memory for the root node and its children 
+   delete root;  // destructor for this Node will be called this moment :)
 
 }

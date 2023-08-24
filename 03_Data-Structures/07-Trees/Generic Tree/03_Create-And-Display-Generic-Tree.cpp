@@ -53,6 +53,9 @@ Node* createGTree(vector<int> &v)
     return root;
 }
 
+
+// Display nodes using Depth First Traversal aka Euler Path Traversal :)
+
 void display(Node* root)
 {
     cout<<"Children of "<<root->data<<" -> ";

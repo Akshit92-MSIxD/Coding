@@ -1,6 +1,6 @@
 // *** Imp : Please read about Depth First Creation of GTree [maine isi program mai sabse niche likha hua detail mai iske baare mai pad lena use bhi !!!!]
 
-// Depth First is related with stack !!!! :)
+// Depth First is related with stack and vice versa !!!! :)
 // Breadth First is related with Queue !!!! :)
 
 #include <iostream>

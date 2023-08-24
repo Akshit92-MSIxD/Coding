@@ -1,0 +1,5 @@
+==> Generic Tree : 
+    
+    -- It is a non linear DS which stores data in hierarchical order.
+    -- It can have multiple nodes where each node stores some data and addresses to its child nodes.
+    -- There can be multiple child nodes of a particular node.

@@ -69,6 +69,7 @@ TreeNode* create_GTree(vector<int> &v)
 }
 
 
+// Recursive DFS traversals  [Note : Iterative DFS traversal techniques left!!!]
 void dfs_traversal(TreeNode* root)
 {
     if(root == NULL)
@@ -89,7 +90,7 @@ void dfs_traversal(TreeNode* root)
 
 int main()
 {
-    vector<int> tree = {10,20,-1,30,50,-1,60,-1,-1,40,-1};
+    vector<int> tree = {10,20,-1,30,50,-1,60,-1,-1,40,-1}; // tree provided in preorder form
 
     TreeNode* root = create_GTree(tree);
 

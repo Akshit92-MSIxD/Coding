@@ -3,7 +3,7 @@
 
 // In this problem we will learn about DFS Traversal Techniques for Trees [DFS is a recursive algorithm that uses backtracking :)]
 
-// DFS traversal techniques - Preorder Traversal and Postorder Traversal [Note : Inorder Traversal only valid for for BT :)]
+// DFS traversal techniques types - Preorder Traversal and Postorder Traversal [Note : Inorder Traversal only valid for for BT :)]
 
 /* Preorder Technique :-
 
@@ -69,7 +69,7 @@ TreeNode* create_GTree(vector<int> &v)
 }
 
 
-void traversal(TreeNode* root)
+void dfs_traversal(TreeNode* root)
 {
     if(root == NULL)
     return;
@@ -79,7 +79,7 @@ void traversal(TreeNode* root)
     for(int i=0;i<root->children.size();i++)
     {
         cout<<"Edge Pre "<<root->data<<" - "<<root->children[i]->data<<endl;  // edge meaning call , Pre egde ==> Pre call(will print the edge)
-        traversal(root->children[i]);
+        dfs_traversal(root->children[i]);
         cout<<"Edge Post "<<root->data<<" - "<<root->children[i]->data<<endl; // Post egde ==> Post call(will print the edge)
         
     }
@@ -93,5 +93,5 @@ int main()
 
     TreeNode* root = create_GTree(tree);
 
-    traversal(root);
+    dfs_traversal(root);
 }

@@ -1,3 +1,5 @@
+// Approaches left :  Iterative DFS traversal, Recursive BFS traversal , Iterative BFS traversal !!!!
+
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -53,7 +55,9 @@ TreeNode* create_GTree(vector<int> &v)  // TC : O(n) , where n is the no. of nod
 }
 
 
-// Note : We can also find max using iterative method by using stack :)
+
+
+// Recursive DFS traversal technique to find max node in tree :)   [Note : We can also find max using iterative DFS traveral technique by using stack]
 
 int  get_max(TreeNode* root) // TC depends on type of the tree :) 
 {

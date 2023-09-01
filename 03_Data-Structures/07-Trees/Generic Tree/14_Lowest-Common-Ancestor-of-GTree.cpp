@@ -1,5 +1,5 @@
 // Note : I have written two functions for this problems one is brute force and another one is optimal one  bewlow :)
-// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/(Lowest Common Ancestor of a Binary Tree Leetcode)
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ (Lowest Common Ancestor of a Binary Tree Leetcode)
 
 #include <iostream>
 #include <stack>

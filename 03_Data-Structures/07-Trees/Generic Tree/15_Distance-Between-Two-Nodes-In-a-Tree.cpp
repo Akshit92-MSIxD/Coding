@@ -4,5 +4,19 @@
 
 // Prerequiste : 14_Lowest-Common-Ancestor-of-GTree :)
 
-// Hint : Find LCA of two nodes a and b + Find the distance btw LCA-node and node-a + Find the distance btw LCA-node and node-b :)
+/* Approach 1 : ==> Find the root to node path / node to root path for both a and b separately
+                ==> Then traverse both the paths and Find the LCA node
+                ==> Then check how far the LCA node is from a and b in their respective NodeToRootPath/RootToNodePath
+                ==> Then add both the distance/difference to get the minimum distance between a and b :)
+                ==> TC : O(n) , SC : O(H)[recursive] + additional vector space to store NodeToRootPath/RootToNodePath
+*/
+
+/* Approach 2 : ==> Find the LCA for a and b directly using only one recursive function  without storing their NodeToRootPath/RootToNodePath:)
+                ==> Then we have to find the distance of a and b individually!!! from LCA node by using extra recursive function
+                ==> Then add both the distance to get the minimum distance between a and b :)
+                ==> TC : O(3n) , SC : O(H)[recursive]
+*/
+
+
+
 

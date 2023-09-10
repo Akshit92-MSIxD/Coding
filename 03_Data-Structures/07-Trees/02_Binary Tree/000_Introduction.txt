@@ -1,0 +1,5 @@
+==> Binary Tree : 
+    
+    -- It is a non linear DS which stores data in hierarchical order.
+    -- It can have either 0 or 1 or 2 childrens
+    -- It is used for making expression tree for a given expression !!!

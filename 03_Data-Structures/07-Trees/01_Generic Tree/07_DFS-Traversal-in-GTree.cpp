@@ -1,6 +1,5 @@
 // Please refer to this GFG article for better understanding : https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 
-
 // In this problem we will learn about DFS Traversal Techniques for Trees [DFS is a recursive algorithm that uses backtracking :)]
 
 // DFS traversal techniques types - Preorder Traversal and Postorder Traversal [Note : Inorder Traversal only valid for for BT :)]
@@ -20,6 +19,9 @@
   -- To get Postorder for given tree ==> Print nodes only when going from node's right side in Euler Path
 
 */
+
+//*** https://leetcode.com/problems/n-ary-tree-preorder-traversal/ [N-ary Tree DFS Preorder Traversal]
+//*** https://leetcode.com/problems/n-ary-tree-postorder-traversal/ [N-ary Tree DFS Postorder Traversal]
 
 #include <iostream>
 #include <vector>
@@ -69,7 +71,7 @@ TreeNode* create_GTree(vector<int> &v)
 }
 
 
-// Recursive DFS traversals  [Note : Iterative DFS traversal techniques left!!!]
+// Recursive DFS traversals
 void dfs_traversal(TreeNode* root)
 {
     if(root == NULL)

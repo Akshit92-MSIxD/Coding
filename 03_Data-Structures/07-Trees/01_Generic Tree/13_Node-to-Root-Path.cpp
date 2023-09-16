@@ -86,8 +86,7 @@ int main()
      if(path.size() == 0)
      {
         cout<<"Target Node is not present in the tree!!!";
-        return 0
-        ;
+        return 0;
      }
      cout<<"Node to root path : ";
       

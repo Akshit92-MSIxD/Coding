@@ -84,7 +84,7 @@ TreeNode* create_BTree(vector<int> &v)
 
 int main()
 {
-    vector<int> tree = {50,25,12,NULL,NULL,37,30,NULL,NULL,NULL,75,62,NULL,70,87,NULL,NULL}; // tree in form of preorder sequence :)
+    vector<int> tree = {50,25,12,NULL,NULL,37,30,NULL,NULL,NULL,75,62,NULL,70,NULL,NULL,87,NULL,NULL}; // tree in form of preorder sequence :)
 
     TreeNode* root = create_BTree(tree);
 

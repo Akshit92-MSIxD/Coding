@@ -1,3 +1,5 @@
+// Note : I have written two functions/approaches for this problem below . Please read both from top to bottom for better understanding :)
+
 #include <iostream>
 #include <stack>
 #include <vector>

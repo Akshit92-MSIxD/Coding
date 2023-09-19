@@ -3,6 +3,6 @@
 // *** Those two nodes can be either "two leaf nodes(deepest nodes)" or "one root node and one leaf node" !!!
 
 // *** Note : It is not necessary that diameter length will always pass from root node !!!
-// *** Hint : related with maxDepth of tree !!!
+// *** Hint : related with maxDepth/height of tree !!!
 
 // https://leetcode.com/problems/diameter-of-binary-tree/ ( Diameter of Binary Tree)

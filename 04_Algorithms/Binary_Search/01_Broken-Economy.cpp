@@ -3,6 +3,11 @@
 // ceil : smallest value greater than equal to data
 // floor : largest value less than equal to data
 
+// Brute Force : One Linear Traversal + checking each element of array with Ceil or Floor Varible Accordingly !!! (TC : O(n))
+
+
+// Optimal Approach : Using Binary search (TC : O(logn))
+
 #include<iostream>
 using namespace std;
 

@@ -49,7 +49,7 @@ int main()
     // Insert a string after a specific position or from specific index
 
     string S1 = "Ayush";
-    S1.insert(5,"R"); // Inserting/placing "YOOO" after position 4 or starting from index 4 in S1 using insert(after_pos/index,"string") function!!!
+    S1.insert(4,"Yoo"); // Inserting/placing "YOOO" after position 4 or starting from index 4 in S1 using insert(after_pos/index,"string") function!!!
     cout<<S1<<endl;
 
 

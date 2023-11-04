@@ -141,7 +141,7 @@ using namespace std;
         }
 
 
-   // Step 2 : Reversing
+   // Step 2 : Rotate oned array by r rotations !!!
 
       // reverse the whole oned 
       reverse(oned , 0 , oned.size()-1);

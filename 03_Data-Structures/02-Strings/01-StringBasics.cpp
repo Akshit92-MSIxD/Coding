@@ -18,7 +18,7 @@ using namespace std;
 int main()
 {
     // string str1;
-    // cin>>str1 ; // cin takes input until newline and space is encounted!!! (cin is an object!!)
+    // cin>>str1 ; // cin takes input until whitespace is encountered!!! (cin is an object!!)
     // cout<<str1<<endl;
 
     // string str2;

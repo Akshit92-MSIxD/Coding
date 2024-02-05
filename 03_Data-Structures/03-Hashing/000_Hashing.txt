@@ -1,0 +1,54 @@
+
+
+Q) WHAT IS HASHING??
+
+-- Hashing is a process of converting a input(key) into a hash code(hash value) and used that hash_code/hash_value 
+   as a index to determine the location within a datastructure , typically an array or hash table !!!
+   for efficient data storage and faster/efficient data retrieval/access
+
+
+
+Q) HOW KEY-VALUE PAIRS ARE STORED AND ACCESSED IN A HASH_TABLE??
+
+-- In a hash table, the key-value pairs are stored in the slots or buckets. Each bucket corresponds to a specific 
+   hash code. When you insert a key-value pair, the hash code of the key is computed, and this hash code determines
+   the location (bucket) in the hash table where the key-value pair will be stored. The key and its associated value
+   are then stored together in that bucket.
+
+-- During retrieval, when you provide a key, the hash code is calculated again, and the hash table is accessed at
+   the corresponding bucket to retrieve the stored key-value pair. This mechanism allows for quick and efficient
+   retrieval of values based on their associated keys.
+
+
+
+ Q) WHAT IS COLLISIONS IN A HASH_TABLE ?
+
+-- When two different keys produce the same hash code, it's known as a hash collision. Hash functions aims to
+   distribute keys uniformly to avoid collisions, but collisions can still occur due to the finite range of hash codes
+   compared to the infinite set of possible keys.
+
+-- In the case of a collision, various techniques are employed to handle it:
+
+      --> Separate Chaining: Each bucket contains a linked list or another data structure that can hold multiple
+          key-value pairs with the same hash code.
+
+      --> Open Addressing: The system searches for the next available slot in the hash table to place the colliding
+          key-value pair.
+
+-- Both approaches ensure that even if two keys produce the same hash code, their key-value pairs can coexist in the
+   hash table without interfering with each other. The choice between these collision resolution strategies depends
+   on the specific implementation of the hash table.
+
+-- Watch this video : https://youtu.be/KyUTuwz_b7Q?feature=shared :)
+
+
+
+Q) TIME COMPLEXITY FOR INSERT/DELETE/SEARCH IN A HASH TABLE??
+
+-- https://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete
+
+
+
+Q) STL maps for hashing ?
+
+-- https://www.geeksforgeeks.org/map-vs-unordered_map-c/

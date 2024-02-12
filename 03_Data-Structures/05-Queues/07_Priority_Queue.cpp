@@ -11,6 +11,8 @@
 
 // Deletion of a element from a  n-size pq can take O(logn) worst case TC
 
+// Remember Each insertion/deletion operation into a heap takes O(log n) time, where n is the number of elements in the heap followed by Rebalancing the heaps which also takes O(log n) time. 
+
 // SC : O(n) , where n is no. of elements inside the pq
 
 // Its implementation is done with the help of Tree DataStructure so please take good knowledge of trees to understand its implementation :)

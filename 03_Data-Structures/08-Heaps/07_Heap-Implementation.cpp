@@ -25,7 +25,7 @@ class Heap   // this is max-heap
     this->arr = new int[capacity];
   }
 
- void heapify(int i)  // heapify the node present at index = i in the heap !!!
+ void heapify(int i)  // Down heapify the node present at index = i in the heap !!!
  {
 
      int leftChildIndex = 2*i + 1;
@@ -64,7 +64,7 @@ class Heap   // this is max-heap
 
 
           // Then adjust its(key) position by comparing it with its parent node until this key reaches the root position or its parent becomes greater than it(key)
-            for(int i=last_index;i>0;i = (i-1)/2)
+            for(int i=last_index;i>0;i = (i-1)/2)   // this is upheapify() means uppar ki taraf heapify kro !!!
             {
                 int parent = arr[(i-1)/2]; // since for index i , its parent is at index (i-1)/2 !!!
 

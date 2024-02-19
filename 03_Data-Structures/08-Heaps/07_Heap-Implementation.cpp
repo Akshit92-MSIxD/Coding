@@ -14,14 +14,14 @@ using namespace std;
 class Heap   // this is max-heap
 {
    int* arr;
-   int capacity; // max. possible Size of this max-heap
-   int Size;
+   int capacity; // max. possible size of this max-heap
+   int size;
 
  public :
 
   Heap(int capacity){
     this->capacity = capacity;
-    this->Size = 0;
+    this->size = 0;
     this->arr = new int[capacity];
   }
 
@@ -33,10 +33,10 @@ class Heap   // this is max-heap
      int largest = i;
 
 
-     if(leftChildIndex <= (Size - 1) &&  arr[leftChildIndex] > arr[largest])
+     if(leftChildIndex <= (size - 1) &&  arr[leftChildIndex] > arr[largest])
       largest = leftChildIndex;
 
-     if(rightChildIndex <= (Size - 1) &&  arr[rightChildIndex] > arr[largest])
+     if(rightChildIndex <= (size - 1) &&  arr[rightChildIndex] > arr[largest])
       largest = rightChildIndex;
 
 
@@ -52,14 +52,14 @@ class Heap   // this is max-heap
 
  void insertKey(int key){
             
-            if(Size == capacity)
+            if(size == capacity)
             {
                 cout<<"Heap Overflow i.e heap is full , You can't insert key anymore!!! ";
                 return;
             }
 
-            Size++;
-            int last_index = Size - 1;
+            size++;
+            int last_index = size - 1;
             arr[last_index] = key;   // place the key at the last index of the heap !!! 
 
 
@@ -81,20 +81,20 @@ class Heap   // this is max-heap
 
  void deleteKey(int i){        // delete the node present at index = i in the heap !!!
 
-     if(Size == 0)
+     if(size == 0)
      {
         cout<<"Heap Underflow i.e heap is empty!!!";
         return;
      }
 
-     if(i > Size - 1)
+     if(i > size - 1)
      {
       cout<<"Invalid index!!!";
      }
 
-     int last_index = Size - 1;
+     int last_index = size - 1;
      arr[i] = arr[last_index];   // replace the node at index i with the last node !!!
-     Size--; // // delete the last node from the heap !!!
+     size--; // // delete the last node from the heap !!!
 
      heapify(i); // heapify for node at index = i !!! 
  }
@@ -103,7 +103,7 @@ class Heap   // this is max-heap
 
  int getMaxKey()
  {
-     if(Size == 0)
+     if(size == 0)
      {
         cout<<"Heap Underflow i.e heap is empty!!!";
         return 0;
@@ -116,7 +116,7 @@ class Heap   // this is max-heap
 
  int extractMaxkey()   // that means return and delete the max-key or max-element present in the heap simultaneously !!!
  {
-    if(Size == 0)
+    if(size == 0)
      {
         cout<<"Heap Underflow i.e heap is empty!!!";
         return 0;
@@ -124,9 +124,9 @@ class Heap   // this is max-heap
 
      int maxKey = arr[0];
        
-     int last_index = Size - 1;
+     int last_index = size - 1;
      arr[0] = arr[last_index];  // replace the root node of heap with the last node in the heap !!!
-     Size--;  // delete the last node from the heap !!!
+     size--;  // delete the last node from the heap !!!
 
      heapify(0);  // then heapify the tree for root node with index = 0 !!!
 
@@ -135,18 +135,11 @@ class Heap   // this is max-heap
 
 
 
- int size()
- {
-  return this->Size;
- }
-
- 
-
  void display()
  {
      cout<<"Heap : ";
 
-     for(int i=0;i<Size;i++)
+     for(int i=0;i<size;i++)
      {
       cout<<arr[i]<<" ";
      }

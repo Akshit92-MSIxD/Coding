@@ -5,19 +5,25 @@
        
     Techniques used for DP :
 
-    1) Memoization(Recursive) : 
+    1) Memoization(Recursive)(Top-Down Approach) : 
 
-        -- Create an array/vector of size (input size + 1) or unordered_map and pass it to a recursive function to store the results
-           of subproblems. This allows for direct retrieval of results for the same subproblems without the need to
+        -- Create an array/vector/cache of size (input size + 1) or unordered_map and pass it to a recursive function to store the results
+           of subproblems for future use. This allows for direct retrieval of results for the same subproblems without the need to
            recalculate them.
-
+        
+        -- "Top-Down" approach means approaching the main problem by starting from the main problem (the "top") and breaking it down
+           into smaller subproblems , then recursively solve the smaller subproblems. 
+           
         -- Can lead to stack overflow if problem is very very large (recursive stack size allows upto 10^4 records only)
+      
 
-
-    2) Tabulation(Iterative) :
+    2) Tabulation(Iterative)(Bottom-Up approach) :
 
         -- Create an array/vector/table of size (input size + 1) and assign meaning to each index. Begin solving from the
            smaller subproblems and progress towards the larger subproblems by using the results of previous
            subproblems, until reaching the given bigger problem !!! 
+
+        -- "Bottom-Up" approach means it approaches the given problem from the bottom i.e starting with the smallest subproblems and
+            gradually solving larger ones by reusing the solutions of smaller subproblems.
 
         -- Faster than memoization(recursive) but harder to come up with its approach.

@@ -16,7 +16,7 @@
 
     2) Tabulation(Iterative) :
 
-        -- Create an array/vector of size (input size + 1) and assign meaning to each index. Begin solving from the
+        -- Create an array/vector/table of size (input size + 1) and assign meaning to each index. Begin solving from the
            smaller subproblems and progress towards the larger subproblems by using the results of previous
            subproblems, until reaching the given bigger problem !!! 
 

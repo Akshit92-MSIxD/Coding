@@ -127,11 +127,11 @@ int main()
  vector<int> jumps = {3,3,0,2,2,3}; // from 0th step i.e ground you can make upto 2 jumps , from 1th step --> upto 4 jumps , from 2th step --> upto 1 jump ,...........from 5th step upto 3 jumps and the 6th step is the destination place/step on staircase !!!
 
 
- vector<int> dp(n+1,0);   // each index i represent no. of ways to reach nth stair from ith stair 
+ vector<int> dp(n+1,0);   // assume each index i represent no. of ways to reach nth stair from ith stair 
 
  dp[n] = 1;
 
- for(int i = n-1 ; i>=0 ; i--)   
+ for(int i = n-1 ; i>=0 ; i--)   // In this case smaller subproblem will exist RHS and main problem will exist on LHS of dp vector so we traverse the dp vector in reverse direction !!!
  {
        
        for(int jmp = 1; jmp<=jumps[i];jmp++)

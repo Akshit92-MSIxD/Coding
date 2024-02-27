@@ -129,7 +129,7 @@ int main()
 
 //  vector<int> dp(n+1,0);   // assume each index i represent no. of ways to reach nth stair from ith stair 
 
-//  dp[n] = 1;
+//  dp[n] = 1;    // there is only one way to reach nth stair from same nth stair i.e do not do anything !!!
 
 //  for(int i = n-1 ; i>=0 ; i--)   // In this case smaller subproblem will exist RHS and main problem will exist on LHS of dp vector so we traverse the dp vector in reverse direction !!!
 //  {

@@ -35,7 +35,7 @@ int main()
 {
 
  int n; // number of stairs = n , and nth step on staircase  is the destination place !!!
- n = 6; // so there are total 6 stair steps on staircase and we have to find no.of ways of climbing 6 stairs from ground !!!
+ n = 6; // so there are total 6 stair steps on staircase and we have to find no.of ways of "climbing 6 stairs from ground" or "to reach 6th stair from ground" !!!
 
  vector<int> jumps = {3,3,0,2,2,3}; // from 0th step i.e ground you can make upto 2 jumps , from 1th step --> upto 4 jumps , from 2th step --> upto 1 jump ,...........from 5th step upto 3 jumps and the 6th step is the destination place/step on staircase !!!
 

@@ -5,7 +5,7 @@
 
 
 // Approach 1 : Normal Recursive Solution
-// TC : O(n^n)  [assume from from every step on staircase we can make upto n jumps]
+// TC : O(n^n)  [assume from every step on staircase we can make upto n jumps]
 // SC : O(n) [recursive stack space]
 
 #include <iostream>
@@ -54,7 +54,7 @@ int main()
 
 
 // Approach 2 : DP(memoization)(recursive)
-// TC : O(n^2)  [assume from from every step on staircase we can make upto n jumps]
+// TC : O(n^2)  [assume from every step on staircase we can make upto n jumps]
 // SC : O(n) [recursive stack space]
 
 // #include <iostream>
@@ -110,7 +110,7 @@ int main()
 
 
 // Approach 3 : DP(tabulation)(iterative)
-// TC : O(n^2)  [assume from from every step on staircase we can make upto n jumps]
+// TC : O(n^2)  [assume from every step on staircase we can make upto n jumps]
 // SC : O(n) [vector space]
 
 // #include <iostream>

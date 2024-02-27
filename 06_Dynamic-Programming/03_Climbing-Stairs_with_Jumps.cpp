@@ -1,6 +1,7 @@
 
 
 // In this problem for each ith step on staircase can have different jump values given in the form of array
+// We have to find no.of ways to "climb n stairs from ground" or "reach nth stair from ground" !!!
 // Problem video : https://www.youtube.com/watch?v=uNqoQ0sNZCM&list=PL-Jc9J83PIiG8fE6rj9F5a6uyQ5WPdqKy&index=3
 
 
@@ -35,7 +36,7 @@ int main()
 {
 
  int n; // number of stairs = n , and nth step on staircase  is the destination place !!!
- n = 6; // so there are total 6 stair steps on staircase and we have to find no.of ways of "climbing 6 stairs from ground" or "to reach 6th stair from ground" !!!
+ n = 6; // so there are total n stair steps on staircase and we have to find no.of ways to "climb n stairs from ground" or "reach nth stair from ground" !!!
 
  vector<int> jumps = {3,3,0,2,2,3}; // from 0th step i.e ground you can make upto 2 jumps , from 1th step --> upto 4 jumps , from 2th step --> upto 1 jump ,...........from 5th step upto 3 jumps and the 6th step is the destination place/step on staircase !!!
 
@@ -89,7 +90,7 @@ int main()
 // {
 
 //  int n; // number of stairs = n , and nth step on staircase  is the destination place !!!
-//  n = 6; // so there are total 6 stair steps on staircase and we have to find no.of ways of climbing 6 stairs from ground !!!
+//  n = 6; // so there are total n stair steps on staircase and we have to find no.of ways to "climb n stairs from ground" or "reach nth stair from ground" !!!
 
 //  vector<int> jumps = {3,3,0,2,2,3}; // from 0th step i.e ground you can make upto 2 jumps , from 1th step --> upto 4 jumps , from 2th step --> upto 1 jump ,...........from 5th step upto 3 jumps and the 6th step is the destination place/step on staircase !!!
 
@@ -122,7 +123,7 @@ int main()
 // {
 
 //  int n; // number of stairs = n , and nth step on staircase  is the destination place !!!
-//  n = 6; // so there are total 6 stair steps on staircase and we have to find no.of ways of climbing 6 stairs from ground !!!
+//  n = 6; // so there are total n stair steps on staircase and we have to find no.of ways to "climb n stairs from ground" or "reach nth stair from ground" !!!
 
 //  vector<int> jumps = {3,3,0,2,2,3}; // from 0th step i.e ground you can make upto 2 jumps , from 1th step --> upto 4 jumps , from 2th step --> upto 1 jump ,...........from 5th step upto 3 jumps and the 6th step is the destination place/step on staircase !!!
 
@@ -146,7 +147,7 @@ int main()
 
 
 
-//  cout<<"\nTotal number of ways of climbing "<<n<<" stairs from ground : "<<dp[0]<<endl<<endl;
+//  cout<<"\nTotal number of ways to \"climb "<<n<<" stairs from ground\" or \"reach "<<n<<"th stair from ground\" : "<<dp[0]<<endl<<endl;
 
 // }
 

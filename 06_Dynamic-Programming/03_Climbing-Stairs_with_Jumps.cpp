@@ -42,7 +42,7 @@ int main()
 
  int total_ways = getTotalNumberOfWays(jumps,0,n);
 
- cout<<"\nTotal number of ways of climbing "<<n<<" stairs from ground : "<<total_ways<<endl<<endl;
+ cout<<"\nTotal number of ways to \"climb "<<n<<" stairs from ground\" or \"reach "<<n<<"th stair from ground\" : "<<total_ways<<endl<<endl;
 
 }
 
@@ -98,7 +98,7 @@ int main()
 
 //  int total_ways = getTotalNumberOfWays(jumps,0,n,dp);
 
-//  cout<<"\nTotal number of ways of climbing "<<n<<" stairs from ground : "<<total_ways<<endl<<endl;
+//  cout<<"\nTotal number of ways to \"climb "<<n<<" stairs from ground\" or \"reach "<<n<<"th stair from ground\" : "<<total_ways<<endl<<endl;
 
 // }
 

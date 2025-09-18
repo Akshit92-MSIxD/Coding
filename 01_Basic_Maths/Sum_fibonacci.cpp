@@ -20,7 +20,7 @@ int main()
             cout <<" "<<second;
             continue;
         }
-        next = first - second;
+        next = first + second;
         first = second;
         second = next;
         sum=sum+second;

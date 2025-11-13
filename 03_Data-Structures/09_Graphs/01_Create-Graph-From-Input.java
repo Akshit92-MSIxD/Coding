@@ -47,7 +47,7 @@ import java.util.ArrayList;
 // This creates an array of size 'v' on the heap.
 // Each element of this array is meant to hold a separate ArrayList<Edge> reference,
 // but right now all of them are null.
-   ArrayList<Edge>[] graph = new ArrayList[v]; 
+   ArrayList<Edge>[] graph = new ArrayList[v];  // This is adjacency list !!!
 
 
  // Now we allocate memory for each individual ArrayList<Edge> object. (Everything in Java is an object except primitive types!!!)

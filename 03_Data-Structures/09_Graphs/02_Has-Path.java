@@ -1,6 +1,7 @@
 
 // In this problem we have to if there exists a path from vertex x to vertex y or not !!!!
 // Related Problem : https://leetcode.com/problems/find-if-path-exists-in-graph/
+// BFS , Union Find Approaches left !!!
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

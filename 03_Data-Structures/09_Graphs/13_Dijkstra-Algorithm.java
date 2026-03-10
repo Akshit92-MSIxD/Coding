@@ -2,3 +2,5 @@
 // https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
 
 // https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1 (Shortest Path in an Undirected Weighted Graph)
+
+// https://leetcode.com/problems/path-with-minimum-effort/submissions/1943586535/

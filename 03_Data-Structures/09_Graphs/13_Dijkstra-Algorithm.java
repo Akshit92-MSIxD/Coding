@@ -6,3 +6,5 @@
 // https://leetcode.com/problems/path-with-minimum-effort/submissions/1943586535/
 
 // https://leetcode.com/problems/cheapest-flights-within-k-stops/ (TC aur SC samajane mai dikkat aari !!!)
+
+// https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1

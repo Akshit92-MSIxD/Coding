@@ -1,0 +1,80 @@
+
+--> Disjoint Sets:
+Sets that have no common elements (i.e., their pairwise intersection is empty).
+
+Example:
+A = {1,2,3}, B = {4,5}, C = {-1,100}
+
+A ∩ B = ∅, B ∩ C = ∅, A ∩ C = ∅
+(∅ denotes the empty set)
+
+--------------------------------------------------
+
+--> Goal (in DSU / Union-Find):
+We study how to efficiently merge (union) different disjoint sets (groups).
+
+--------------------------------------------------
+
+--> Representation in Graphs:
+Each set (group) is represented by a single node called:
+- representative
+- root
+- leader
+
+All nodes in the set are connected (directly or indirectly) to this representative.
+
+--------------------------------------------------
+
+--> Key Idea of Union:
+When we perform union(u, v):
+
+- We do NOT just connect u and v directly.
+- Instead, we find their representatives (roots).
+- Then we merge the two entire groups by connecting their roots(leaders/representatives) on the basis of thier ranks or sizes.
+- Even though we call union(u, v), we are actually merging the complete sets to which u and v belong. 
+
+--------------------------------------------------
+
+--> Why do we use DSU?
+
+- To efficiently track which elements/nodes belong to the same group.
+- To quickly check whether two elements are connected or not.
+- To avoid recomputing connectivity again and again
+
+Naive approach:
+- Checking connectivity → O(n)
+
+Using DSU:
+- Find() + Union() → ~O(1) (amortized)
+
+--> Applications of DSU:
+
+1. Connected Components in Graphs
+   - Find how many separate groups exist
+
+2. Cycle Detection in Undirected Graph
+   - If two nodes already have same parent → cycle exists
+
+3. Kruskal’s Algorithm (Minimum Spanning Tree)
+   - Used to check whether adding an edge creates a cycle
+
+4. Number of Provinces / Friend Circles
+   - Grouping people or nodes into connected components
+
+5. Number of Islands (DSU approach)
+   - Merging adjacent land cells into components
+
+6. Accounts Merge / Grouping Problems
+   - Merge data based on shared attributes
+
+7. Dynamic Connectivity
+   - When connections are added over time
+
+--------------------------------------------------
+
+--> Key Takeaway:
+DSU is used whenever we need to:
+✔ Merge groups dynamically
+✔ Check if two elements belong to the same group
+✔ Maintain connectivity efficiently
+ 

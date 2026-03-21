@@ -1,5 +1,5 @@
 
---> Spanning Tree : A tree in which we have N nodes and N - 1 edges and all nodes are reachable from each other !!!
+--> Spanning Tree : A tree that has N nodes and N - 1 edges and connected(all nodes are reachable from each other) and no cycle exist !!!
 
 --> We can generate more than one Spanning Tree for a given connected graph  !!! --> Tree with the smallest edge weight sum will be the MST.
 
@@ -9,4 +9,4 @@
 
 --> How to find the MST for a given graph ??
     - Prim's Algorithm   [ https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1 ]
-    - Krushkal's Algorithm
+    - Krushkal's Algorithm [https://www.geeksforgeeks.org/problems/minimum-spanning-tree-kruskals-algorithm/1]

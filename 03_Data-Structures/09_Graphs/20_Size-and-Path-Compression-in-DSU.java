@@ -10,13 +10,13 @@
  import java.io.InputStreamReader;
  import java.io.IOException;
 
- class DSU
+ class DisjointSet
  {
     int n;
     int[] size;    // size[i] → number of nodes in the group whose leader is i
     int[] parent;
 
-    DSU(int n)
+    DisjointSet(int n)
     {
       this.n = n;
       this.size = new int[n];
@@ -37,7 +37,7 @@
         return parent[v] = find(parent[v]);
     }
 
-    void union(int v1, int v2)
+    void unionBySize(int v1, int v2)
     {
         int leader1 = find(v1);
         int leader2 = find(v2);
@@ -66,16 +66,16 @@
      System.out.println("Enter the total no. of vertices/values");
      int n = Integer.parseInt(br.readLine()); // please enter 8
 
-     DSU  DSUobj = new DSU(n);
+     DisjointSet  ds = new DisjointSet(n);
 
     // performing union operations (merging groups)
-     DSUobj.union(0,1);
-     DSUobj.union(1,2);
-     DSUobj.union(3,4);
-     DSUobj.union(5,6);
-     DSUobj.union(6,7);
-     DSUobj.union(4,5);
-     DSUobj.union(2,7);
+     ds.unionBySize(0,1);
+     ds.unionBySize(1,2);
+     ds.unionBySize(3,4);
+     ds.unionBySize(5,6);
+     ds.unionBySize(6,7);
+     ds.unionBySize(4,5);
+     ds.unionBySize(2,7);
      
   
 
@@ -87,7 +87,7 @@
         int v1 = Integer.parseInt(nums[0]);
         int v2 = Integer.parseInt(nums[1]);
 
-        if(DSUobj.find(v1) == DSUobj.find(v2))
+        if(ds.find(v1) == ds.find(v2))
         System.out.println("Result : Same group !!!");
         else
         System.out.println("Result : Different group !!! ");

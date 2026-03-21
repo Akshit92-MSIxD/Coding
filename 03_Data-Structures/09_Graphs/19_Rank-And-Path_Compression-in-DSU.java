@@ -9,14 +9,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-class DSU{
+class DisjointSet{
 
  int n;
  int[] rank;  // rank array → helps keep tree height small / it tells the "upper bound height" of the tree and not the current height !!!
  int[] parent;  // parent array → stores leader of each node
 
 
-  DSU(int n){
+  DisjointSet(int n){
     this.n = n;
     this.rank = new int[n];
     this.parent = new int[n];
@@ -42,7 +42,7 @@ class DSU{
  }
 
   // union function → merges two groups
- void union(int v1, int v2)
+ void unionByRank(int v1, int v2)
  {  
       // find leaders of both nodes
      int leader1 = find(v1);
@@ -78,16 +78,16 @@ class Solution{
      System.out.println("Enter the total no. of vertices/values");
      int n = Integer.parseInt(br.readLine()); // please enter 8
 
-     DSU  DSUobj = new DSU(n);
+     DisjointSet  ds = new DisjointSet(n);
 
     // performing union operations (merging groups)
-     DSUobj.union(0,1);
-     DSUobj.union(1,2);
-     DSUobj.union(3,4);
-     DSUobj.union(5,6);
-     DSUobj.union(6,7);
-     DSUobj.union(4,5);
-     DSUobj.union(2,7);
+     ds.unionByRank(0,1);
+     ds.unionByRank(1,2);
+     ds.unionByRank(3,4);
+     ds.unionByRank(5,6);
+     ds.unionByRank(6,7);
+     ds.unionByRank(4,5);
+     ds.unionByRank(2,7);
      
   
 
@@ -99,7 +99,7 @@ class Solution{
         int v1 = Integer.parseInt(nums[0]);
         int v2 = Integer.parseInt(nums[1]);
 
-        if(DSUobj.find(v1) == DSUobj.find(v2))
+        if(ds.find(v1) == ds.find(v2))
         System.out.println("Result : Same group !!!");
         else
         System.out.println("Result : Different group !!! ");
